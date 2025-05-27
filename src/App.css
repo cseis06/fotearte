@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+    /* Colores de fondo */
+    --bg-p1: #050505;
+    --bg-p2: #131313;
+    --bg-p3: #272727;
+
+    /* Colores de texto */
+    --font-p1: #fcfcfc;
+    --font-p1: #ececec;
+    --font-p3: #d4d4d4;
+
+    --orange: #ee440f;
+
+    /* g: gradient  x/y: axis*/
+    --orange-gx: linear-gradient(
+        to right,
+        #da2100, #ee440f, #ee440f,#ec660f
+      );
+    --orange-gy: -linear-gradient(
+        to top,
+        #da2100, #ee440f, #ee440f,#ec660f
+    );
+
+
+    /* Colores para las redes */
+    --whatsapp: #25d366;
+    --instagram: #8a3ab9;
+    --instagram-gx: linear-gradient(
+        to right,
+        #833ab4,#fd1d1d,#fcb045
+      );
+    --facebook: #1952ce;
+    --youtube: #ff0000;
+    --tiktok: #fff;
+    --tiktok-gx: linear-gradient(
+        to right,
+        #00f2ea, #fff, #fff , #ff0050
+    );
+
+}
+
+/* Modificadores globales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif ;
+}
+
+body {
+    background-color: var(--bg-p1);
+    color: var(--font-p1);
+    text-decoration: none;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+li {
+    margin: 0;
+    padding: 0;
+}
+button{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+input {
+    outline: none;
+}
+select {
+    outline: none;
+    border: none;
+}
+option {
+    outline: none;
+    border: none;
+}
