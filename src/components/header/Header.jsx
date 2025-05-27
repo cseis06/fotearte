@@ -1,14 +1,20 @@
-import React from 'react'
-import './header.css'
+import React, { useState } from 'react';
+import './header.css';
 
 const Header = () => {
+  const [isNavOpen, setIsNavOpen] = useState(false);
+
+  const toggleNav = () => {
+    setIsNavOpen(!isNavOpen);
+  };
+
   return (
     <header>
         <div className='header-content'>
             <div className='logo'>
                 <img src="./img/logo.svg" alt="logo" />
             </div>
-            <nav>
+            <nav className={`nav ${isNavOpen ? 'open' : ''}`}>
                 <ul className='nav-links'>
                     <li>
                         <a href="#">Inicio</a>
@@ -29,12 +35,12 @@ const Header = () => {
                     </li>
                 </ul>
             </nav>
-            <button className='hamburger'>
-                <img src="./img/icon/hamburguer.svg" alt="" />
+            <button className='hamburger' onClick={toggleNav}>
+                <img src="./img/icon/hamburguer.svg" alt="menu" />
             </button>
         </div>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
