@@ -17,6 +17,10 @@
     p {
         font-size: 1.2rem;
     }
+    a {
+        color: var(--font-p3);
+        font-weight: 800;
+    }
 }
 .founder-img img{
     height: 550px;
@@ -43,7 +47,9 @@
 @media (max-width: 1000px) {
     .about {
         padding: 0 8%;
-        margin: 20dvh 0 0 0;
+        margin: 15dvh 0 0 0;
+        
+        text-align: center;
     }
     .about-founder {
         display: flex;
@@ -52,17 +58,200 @@
     }
     .founder {
         h2 {
-            font-size: 3rem;
+            font-size: 2rem;
             line-height: 95%;
             margin-bottom: 3dvh;
             color: var(--orange);
         }
         p {
-            font-size: 1.2rem;
+            font-size: .9rem;
         }
     }
     .founder-img img{
-        display: none;
+        height: 350px;
+        margin: 0 0 30px 0;
+        border-radius: 30px;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
     
+}
+
+.courses {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 20dvh 20%;
+}
+.courses {
+    h3 {
+        font-size: 3rem;
+        line-height: 99%;
+        margin-bottom: 3dvh;
+        color: var(--orange); 
+    }
+    p {
+        font-size: 1.2rem;
+    }
+}
+.about-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+}
+.button-courses {
+    margin: 3dvh 0;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background: var(--orange-gx);
+    color: var(--font-p1);
+    font-size: 1.1rem;
+}
+
+@media (max-width: 1200px) {
+    .courses {
+        padding: 20dvh 16%;
+    }
+    .courses {
+        h3 {
+            font-size: 2.6rem;
+        }
+        p {
+            font-size: 1.1rem;
+        }
+    }
+    .button-courses {
+        font-size: .9rem;
+    }
+    
+}
+@media (max-width: 1000px) {
+    .courses {
+        padding: 20dvh 8%;
+    }
+    .courses {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        padding: 20dvh 8%;
+    }
+    .courses {
+        h3 {
+            font-size: 2rem;
+            line-height: 99%;
+            margin-bottom: 3dvh;
+            color: var(--orange); 
+        }
+        p {
+            font-size: .9rem;
+        }
+    }
+    .about-buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .8rem;
+        text-align: center;
+    }
+    .button-courses {
+        margin: 4dvh 0;
+        padding: 10px 20px;
+        border-radius: 30px;
+        font-size: .75rem;
+        background: var(--orange-gx);
+        color: var(--font-p1);
+        
+    }
+
+}
+
+.join {
+    position: relative;
+    width: 99dvw;
+    height: 850px;
+    overflow: hidden;
+    text-align: center;
+    padding: 0 16%;
+}
+.join-bg {
+  background-image: url('./img/bg/join.png');
+  background-size: cover;
+  background-position: center;
+  width: 100dvw;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.join-content {
+  position: relative;
+  z-index: 1;
+}
+.join-titles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-shadow: var(--bg-p1) 1px 0 25px;
+}
+.join-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 8rem;
+    font-weight: 800;
+    line-height: 90%;
+    padding-top: 300px;
+}
+.join-button button {
+    margin: 5dvh;
+    font-size: 1.8rem;
+    font-weight: 800;
+    border-radius: 50px;
+    padding: 25px 50px;
+    color: var(--font-p1);
+    background: var(--orange-g-x);
+    box-shadow: var(--bg-p1) 1px 0 15px;
+}
+
+@media (max-width: 1000px) {
+    .join {
+        height: 650px;
+    }
+    .join-titles {
+        gap: .5rem;
+    }
+    .join-title {
+        padding-top: 250px;
+        font-size: 6rem;
+    }
+    .join-button button {
+        padding: 22px 44px;
+        margin: 2dvh;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .join {
+        height: 550px;
+    }
+    .join-title {
+        padding-top: 230px;
+        font-size: 4rem;
+    }
+    .join-button button {
+        padding: 18px 36px;
+        margin: 1dvh;
+        font-size: .8rem;
+    }
 }

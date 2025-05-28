@@ -28,11 +28,15 @@
     /* g: gradient  x/y: axis*/
     --orange-gx: linear-gradient(
         to right,
-        #da2100, #ee440f, #ee440f,#ec660f
+        #d80700, #ee440f, #ee440f,#ec660f
+      );
+    --orange-g-x: linear-gradient(
+        to left,
+        #d80700, #ee440f, #ee440f,#ec660f
       );
     --orange-gy: -linear-gradient(
         to top,
-        #da2100, #ee440f, #ee440f,#ec660f
+        #d80700, #ee440f, #ee440f,#ec660f
     );
 
 

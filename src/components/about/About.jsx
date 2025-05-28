@@ -10,40 +10,63 @@ const About = () => {
                     <h2>Capturando Momentos, Compartiendo Pasión</h2>
                     <p>
                     FoteArte, tu puerta de entrada al fascinante mundo de la fotografía. 
-                    Fundada en noviembre de 2010 por el renombrado fotógrafo paraguayo <b>Manuel Pellón</b>, FoteArte comenzó como un proyecto dedicado a producciones fotográficas artísticas, comerciales y sociales. Con el tiempo, evolucionamos y abrazamos la misión de hacer visible lo invisible, llevando la pasión por la fotografía a entusiastas de las artes visuales.
+                    Fundada en noviembre de 2010 por el renombrado fotógrafo paraguayo <a href="#">Manuel Pellón</a>, FoteArte comenzó como un proyecto dedicado a producciones fotográficas artísticas, comerciales y sociales. Con el tiempo, evolucionamos y abrazamos la misión de hacer visible lo invisible, llevando la pasión por la fotografía a entusiastas de las artes visuales.
                     </p>
                 </div>
                 <div className="founder-img">
-                    <img src="./img/portraits/1.jpg" alt="Manuel Pellón" />
+                    <a href="#">
+                        <img src="./img/portraits/founder.jpg" alt="Manuel Pellón" />
+                    </a>
                 </div>
             </div>
         </section>
 
-        <section>
-            <div className='about-courses'>
-                <h2>
-                    Explorando la Fotografía a <br />
-                    Todos los Niveles
-                </h2>
+        <section className='about-courses'>
+            <div className='courses'>
+                <h3>Explorando la Fotografía a <br />Todos los Niveles</h3>
+                
+                
                 <p>
                 Con el tiempo, evolucionamos y abrazamos la misión de hacer visible lo invisible, llevando la pasión por la fotografía a entusiastas de las artes visuales. En el corazón de FoteArte se encuentra nuestro compromiso con la educación fotográfica, expresado a través de cursos en tres niveles:
                 </p>
 
                 <div className='about-buttons'>
-                    <button className='courses'>
-                        <a href="#">Inicio</a>
-                    </button>
-                    <button className='courses'>
-                        <a href="#">Intermedio</a>
-                    </button>
-                    <button className='courses'>
-                        <a href="#">Avanzado</a>
-                    </button>
+                    <a href="#">
+                        <button className='button-courses'>
+                            Inicial
+                        </button>
+                    </a>
+                    <a href="#">
+                        <button className='button-courses'>
+                            Intermedio
+                        </button>
+                    </a>
+                    <a href="#">
+                        <button className='button-courses'>
+                            Avanzado
+                        </button>
+                    </a>
                 </div>
 
                 <p>
                 Creemos en la importancia de construir una comunidad donde la creatividad y la experimentación florezcan. Únete a nosotros en este viaje, donde la calidad educativa se combina con la pasión por capturar la belleza del mundo a través de nuestras lentes.
                 </p>
+            </div>
+        </section>
+
+        <section className="join">
+            <div className="join-bg" />
+            <div className="join-content">
+                <div className='join-titles'>
+                    <div className="join-title">
+                        <p>Únete a FoteArte</p>
+                    </div>
+                    <a href="#" className='join-button'>
+                        <button>
+                            VER CURSOS
+                        </button>
+                    </a>
+                </div>
             </div>
         </section>
     </>
