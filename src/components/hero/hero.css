@@ -45,6 +45,9 @@
 }
 
 @media (max-width: 1000px) {
+    .hero {
+        height: 650px;
+    }
     .hero-titles {
         gap: .5rem;
     }
@@ -57,6 +60,9 @@
 }
 
 @media (max-width: 600px) {
+    .hero {
+        height: 550px;
+    }
     .hero-title {
         font-size: 4rem;
     }

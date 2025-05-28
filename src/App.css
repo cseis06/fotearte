@@ -1,14 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 :root {
     /* Colores de fondo */
-    --bg-p1: #050505;
+    --bg-p1: #000000;
     --bg-p2: #131313;
     --bg-p3: #272727;
 
+    --bg-s1: #ffffff;
+    --bg-s1: #ececec;
+    --bg-s3: #d4d4d4;
+
+    --bg-gy1: -linear-gradient(
+        to top,
+        #000000, #272727, #858585,#d4d4d4
+    );
+
     /* Colores de texto */
-    --font-p1: #fcfcfc;
+    --font-p1: #ffffff;
     --font-p1: #ececec;
     --font-p3: #d4d4d4;
+
+    --font-s1: #000000;
+    --font-s2: #131313;
+    --font-s3: #272727;
 
     --orange: #ee440f;
 
