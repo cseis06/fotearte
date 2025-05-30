@@ -4,7 +4,7 @@ import './about.css'
 const About = () => {
   return (
     <>
-        <section className='about'>
+        <section className='about' id='about'>
             <div className='about-founder'>
                 <div className='founder'>
                     <h2>Capturando Momentos, Compartiendo Pasión</h2>
@@ -21,7 +21,7 @@ const About = () => {
             </div>
         </section>
 
-        <section className='about-courses'>
+        <section className='about-courses' id='couses'>
             <div className='courses'>
                 <h3>Explorando la Fotografía a <br />Todos los Niveles</h3>
                 
@@ -54,7 +54,7 @@ const About = () => {
             </div>
         </section>
 
-        <section className="join">
+        <section className="join" id='join'>
             <div className="join-bg" />
             <div className="join-content">
                 <div className='join-titles'>
@@ -64,6 +64,22 @@ const About = () => {
                     <a href="#" className='join-button'>
                         <button>
                             VER CURSOS
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <section className="gallery" id='gallery'>
+            <div className="gallery-bg" />
+            <div className="gallery-content">
+                <div className='gallery-titles'>
+                    <div className="gallery-title">
+                        <p>¿Te intriga nuestro trabajo?</p>
+                    </div>
+                    <a href="#" className='gallery-button'>
+                        <button>
+                            VER GALERÍA
                         </button>
                     </a>
                 </div>
