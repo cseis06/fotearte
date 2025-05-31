@@ -24,8 +24,6 @@ const About = () => {
         <section className='about-courses' id='couses'>
             <div className='courses'>
                 <h3>Explorando la Fotografía a <br />Todos los Niveles</h3>
-                
-                
                 <p>
                 Con el tiempo, evolucionamos y abrazamos la misión de hacer visible lo invisible, llevando la pasión por la fotografía a entusiastas de las artes visuales. En el corazón de FoteArte se encuentra nuestro compromiso con la educación fotográfica, expresado a través de cursos en tres niveles:
                 </p>
@@ -69,13 +67,51 @@ const About = () => {
                 </div>
             </div>
         </section>
+
+        <section className='teachers' id='teachers'>
+            <div className='teachers-content'>
+                <h3>Instructores Apasionados, <br />Cursos Prácticos y Dinámicos</h3>
+                <div className='teachers-images'>
+                    <div className='teacher-image teacher-1'>
+                        <img src="./img/portraits/1.jpg" alt="Teacher 1" />
+                        <div className='image-description'>
+                            <div className='description'>
+                                <span>Profesor 1</span>
+                                <a href="#">@profe1</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className='teacher-image teacher-2'>
+                        <img src="./img/portraits/1.jpg" alt="Teacher 2" />
+                        <div className='image-description'>
+                            <div className='description'>
+                                <span>Profesor 2</span>
+                                <a href="#">@profe2</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className='teacher-image teacher-3'>
+                        <img src="./img/portraits/1.jpg" alt="Teacher 3" />
+                        <div className='image-description'>
+                            <div className='description'>
+                                <span>Profesor 3</span>
+                                <a href="#">@profe3</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         
         <section className="gallery" id='gallery'>
             <div className="gallery-bg" />
             <div className="gallery-content">
                 <div className='gallery-titles'>
                     <div className="gallery-title">
-                        <p>¿Te intriga nuestro trabajo?</p>
+                        <p>¿Te intriga <br /> nuestro trabajo?</p>
                     </div>
                     <a href="#" className='gallery-button'>
                         <button>
