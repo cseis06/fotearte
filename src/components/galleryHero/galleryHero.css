@@ -1,0 +1,62 @@
+.gallery-hero {
+  position: relative;
+  width: 99dvw;
+  height: 850px;
+  overflow: hidden;
+}
+.gallery-hero-bg {
+  background-image: url('./img/bg/courses.png');
+  background-size: cover;
+  background-position: center;
+  width: 100dvw;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.gallery-hero-content {
+  position: relative;
+  z-index: 1;
+}
+.gallery-hero-titles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-shadow: var(--bg-p1) 1px 0 25px;
+}
+.gallery-hero-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 8rem;
+    font-weight: 900;
+    line-height: 99%;
+    padding-top: 230px;
+}
+
+@media (max-width: 1000px) {
+    .gallery-hero {
+        height: 650px;
+    }
+    .gallery-hero-titles {
+        gap: .5rem;
+    }
+    .gallery-hero-title {
+        font-size: 6rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .gallery-hero {
+        height: 550px;
+    }
+    .gallery-hero-title {
+        font-size: 4rem;
+    }
+}

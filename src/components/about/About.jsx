@@ -1,5 +1,7 @@
 import React from 'react'
 import './about.css'
+import { Link } from 'react-router-dom';
+
 
 const About = () => {
   return (
@@ -113,11 +115,11 @@ const About = () => {
                     <div className="gallery-title">
                         <p>¿Te intriga <br /> nuestro trabajo?</p>
                     </div>
-                    <a href="#" className='gallery-button'>
+                    <Link to="/gallery" className='gallery-button'>
                         <button>
                             VER GALERÍA
                         </button>
-                    </a>
+                    </Link>
                 </div>
             </div>
         </section>

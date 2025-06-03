@@ -1,0 +1,106 @@
+.gallery-photos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 5rem;
+    padding: 5dvh 8%;
+}
+
+.gallery-photos h1 {
+    font-size: 2rem;
+    line-height: 100%;
+    color: var(--orange);
+}
+
+.gallery-photos-content {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: 350px;
+  gap: 3rem;
+  grid-template-areas:
+    "div1 div2 div2 div3 div3 div4"
+    "div5 div5 div6 div6 div7 div7"
+    "div8 div8 div9 div10 div10 div11"
+    "div12 div12 div12 div13 div13 div13";
+}
+
+/* Mapeo de cada div con su área correspondiente */
+.div1 { grid-area: div1; }
+.div2 { grid-area: div2; }
+.div3 { grid-area: div3; }
+.div4 { grid-area: div4; }
+.div5 { grid-area: div5; }
+.div6 { grid-area: div6; }
+.div7 { grid-area: div7; }
+.div8 { grid-area: div8; }
+.div9 { grid-area: div9; }
+.div10 { grid-area: div10; }
+.div11 { grid-area: div11; }
+.div12 { grid-area: div12; }
+.div13 { grid-area: div13; }
+
+/* Estilo de las imágenes */
+.gallery-photos-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 20px;
+}
+
+@media (max-width: 1600px) {
+    .gallery-photos-content  {
+        grid-auto-rows: 320px;
+        gap: 2.8rem;
+    }
+}
+@media (max-width: 1400px) {
+    .gallery-photos-content  {
+        grid-auto-rows: 290px;
+        gap: 2.6rem;
+    }
+}
+@media (max-width: 1200px) {
+    .gallery-photos-content  {
+        grid-auto-rows: 260px;
+        gap: 2.4rem;
+    }
+}
+
+
+@media (max-width: 1000px) {
+  .gallery-photos-content {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "div1 div2 div2"
+      "div3 div3 div4"
+      "div5 div6 div7"
+      "div8 div8 div9"
+      "div12 div12 div12"
+      "div10 div11 div11"
+      "div13 div13 div13";
+    grid-auto-rows: 380px;
+  }
+}
+
+@media (max-width: 650px) {
+  .gallery-photos-content {
+    grid-auto-rows: 270px;
+  }
+}
+@media (max-width: 520px) {
+  .gallery-photos-content {
+    grid-auto-rows: 230px;
+  }
+}
+@media (max-width: 480px) {
+  .gallery-photos-content {
+    grid-auto-rows: 190px;
+  }
+}
+@media (max-width: 400px) {
+  .gallery-photos-content {
+    grid-auto-rows: 150px;
+  }
+}

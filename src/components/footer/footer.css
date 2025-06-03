@@ -16,11 +16,24 @@ footer {
     gap: 5rem;
 }
 .footer-logo img { 
-    width: 400px;
+    margin-top: -30px;
+    width: 350px;
 }
 .footer-content-logo p {
     padding: 3dvh 0 0 0;
     max-width: 400px;
+}
+.footer-content-location h4 {
+    padding-bottom: 15px;
+}
+.footer-content-location li {
+    padding-bottom: 5px;
+}
+.footer-content-menu h4 {
+    padding-bottom: 15px;
+}
+.footer-content-menu li {
+    padding-bottom: 5px;
 }
 .footer-content-social ul {
     padding: 20px 0 0 0;
