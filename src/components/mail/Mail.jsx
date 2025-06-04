@@ -71,7 +71,7 @@ const Mail = () => {
     <section className='mail'>
       <h1>Ponete en contacto con nosotros</h1>
       <span>¡Nos encantaría aclarar todas tus dudas!</span>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className='mail-form'>
         <div className='mail-inputs'>
           <div className='input-group-fields'>
             <input name="nombre" value={form.nombre} onChange={handleChange} type="text" placeholder='Nombre' className='field name' />
@@ -100,7 +100,7 @@ const Mail = () => {
           </div>
         </div>
 
-        <button type="submit">Enviar</button>
+        <button type="submit" className='send-mail'>Enviar</button>
         {success && <p>{success}</p>}
       </form>
     </section>

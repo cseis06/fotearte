@@ -61,11 +61,11 @@ const About = () => {
                     <div className="join-title">
                         <p>Únete a FoteArte</p>
                     </div>
-                    <a href="#" className='join-button'>
+                    <Link to="/courses" className='join-button'>
                         <button>
                             VER CURSOS
                         </button>
-                    </a>
+                    </Link>
                 </div>
             </div>
         </section>

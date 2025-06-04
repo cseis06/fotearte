@@ -34,6 +34,13 @@
     height: 25dvh;
     resize: none;
 }
+.send-mail {
+    padding: 15px 45px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    background: var(--orange-gx);
+    color: var(--font-p1);
+}
 
 @media (max-width: 1200px) {
     .mail h1 {
