@@ -32,7 +32,7 @@ const Header = () => {
                     </li>
                     <li>
                         <button className='contact'>
-                            <a href="#">Contacto</a>
+                            <Link to="/contact">Contacto</Link>
                         </button>
                     </li>
                 </ul>

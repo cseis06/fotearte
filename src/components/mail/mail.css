@@ -1,0 +1,111 @@
+.mail {
+    padding: 8dvh 8%;
+    text-align: center;
+}
+.mail h1 {
+    color: var(--orange);
+    font-size: 3rem;
+}
+.mail span {
+    font-size: 1.25rem;
+}
+.mail-inputs {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: stretch;
+    color: var(--font-p1);
+}
+.input-group-fields {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.field {
+    margin: 20px 0;
+    padding: 15px 30px;
+    border-radius: 30px;
+    background: var(--bg-s1);
+    border: none;
+    width: 100%;
+}
+.input-group-message textarea {
+    height: 25dvh;
+    resize: none;
+}
+
+@media (max-width: 1200px) {
+    .mail h1 {
+        font-size: 2.8rem;
+    }
+    .mail span {
+        font-size: 1.1rem;
+    }
+    .mail-inputs {
+        padding-top: 15px;
+    }
+    .input-group-fields {
+        gap: 1.5rem;
+    }
+    .field {
+        margin: 15px 0;
+    }
+    .input-group-message textarea {
+        height: 25dvh;
+    }
+}
+@media (max-width: 1000px) {
+    .mail h1 {
+        font-size: 2rem;
+        line-height: 99%;
+        padding-bottom: 10px;
+    }
+    .mail span {
+        font-size: 1rem;
+    }
+    .mail-inputs {
+        padding-top: 10px;
+    }
+    .input-group-fields {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 0rem;
+    }
+    .field {
+        margin: 15px 0;
+        font-size: 0.8rem;
+    }
+    .input-group-message textarea {
+        height: 25dvh;
+        resize: none;
+    }
+}
+@media (max-width: 600px) {
+    .mail h1 {
+        font-size: 2rem;
+        line-height: 99%;
+        padding-bottom: 10px;
+    }
+    .mail span {
+        font-size: 1rem;
+    }
+    .mail-inputs {
+        padding-top: 10px;
+    }
+    .input-group-fields {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 0rem;
+    }
+    .field {
+        margin: 15px 0;
+        font-size: 0.8rem;
+    }
+    .input-group-message textarea {
+        height: 25dvh;
+        resize: none;
+    }
+}
