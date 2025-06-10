@@ -8,7 +8,7 @@ const Soon = () => {
       <div className="soon-content">
         <div className='soon-titles'>
             <div className="soon-title">
-                <p>PROXIMAMENTE...</p>
+                <p>Proximamente...</p>
             </div>
         </div>
       </div>

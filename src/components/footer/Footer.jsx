@@ -37,24 +37,24 @@ const Footer = () => {
                 <div className='footer-content-social'>
                     <h4>Nuestras Redes</h4>
                     <ul>
-                        <a href="#">
+                        <a href="https://www.instagram.com/fotearte/?hl=es">
                             <li>
                                 <img src="./img/icon/instagram.svg" alt="instagram" />
                             </li>
                         </a>
-                        <a href="#">
+                        <a href="https://x.com/foteARTE">
                             <li>
                                 <img src="./img/icon/x.svg" alt="x" />
                             </li>
                         </a>
-                        <a href="#">
+                        <a href="https://www.facebook.com/Fotearte/?locale=es_LA">
                             <li>
                                 <img src="./img/icon/facebook.svg" alt="facebook" />
                             </li>
                         </a>
-                        <a href="#">
+                        <a href="https://wa.link/m71gsd">
                             <li>
-                                <img src="./img/icon/linkedin.svg" alt="linkedin" />
+                                <img src="./img/icon/whatsapp.svg" alt="whatsapp" />
                             </li>
                         </a>
                     </ul>

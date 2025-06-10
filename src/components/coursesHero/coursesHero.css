@@ -38,7 +38,7 @@
 
 .courses-hero-title {
   font-size: clamp(3rem, 10vw, 8rem); /* Escala según ancho de pantalla */
-  font-weight: 900;
+  font-weight: 800;
   line-height: 90%;
 }
 

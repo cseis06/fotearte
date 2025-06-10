@@ -31,9 +31,11 @@ const Header = () => {
                          <Link to="/courses">Cursos</Link>
                     </li>
                     <li>
-                        <button className='contact'>
-                            <Link to="/contact">Contacto</Link>
-                        </button>
+                         <Link to="/contact">
+                            <button className='contact'>
+                                Contacto
+                            </button>
+                        </Link>
                     </li>
                 </ul>
             </nav>

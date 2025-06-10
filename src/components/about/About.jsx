@@ -12,11 +12,11 @@ const About = () => {
                     <h2>Capturando Momentos, Compartiendo Pasión</h2>
                     <p>
                     FoteArte, tu puerta de entrada al fascinante mundo de la fotografía. 
-                    Fundada en noviembre de 2010 por el renombrado fotógrafo paraguayo <a href="#">Manuel Pellón</a>, FoteArte comenzó como un proyecto dedicado a producciones fotográficas artísticas, comerciales y sociales. Con el tiempo, evolucionamos y abrazamos la misión de hacer visible lo invisible, llevando la pasión por la fotografía a entusiastas de las artes visuales.
+                    Fundada en noviembre de 2010 por el renombrado fotógrafo paraguayo <a href="https://www.instagram.com/manuelpellonph/" target='_blank'>Manuel Pellón</a>, FoteArte comenzó como un proyecto dedicado a producciones fotográficas artísticas, comerciales y sociales. Con el tiempo, evolucionamos y abrazamos la misión de hacer visible lo invisible, llevando la pasión por la fotografía a entusiastas de las artes visuales.
                     </p>
                 </div>
                 <div className="founder-img">
-                    <a href="#">
+                    <a href="https://www.instagram.com/manuelpellonph/" target='_blank'>
                         <img src="./img/portraits/founder.jpg" alt="Manuel Pellón" />
                     </a>
                 </div>
@@ -31,17 +31,17 @@ const About = () => {
                 </p>
 
                 <div className='about-buttons'>
-                    <a href="#">
+                    <a href="https://wa.link/4wie6h" target='_blank'>
                         <button className='button-courses'>
                             Inicial
                         </button>
                     </a>
-                    <a href="#">
+                    <a href="https://wa.link/jsl598" target='_blank'>
                         <button className='button-courses'>
                             Intermedio
                         </button>
                     </a>
-                    <a href="#">
+                    <a href="https://wa.link/tcpcql" target='_blank'>
                         <button className='button-courses'>
                             Avanzado
                         </button>
@@ -75,31 +75,31 @@ const About = () => {
                 <h3>Instructores Apasionados, <br />Cursos Prácticos y Dinámicos</h3>
                 <div className='teachers-images'>
                     <div className='teacher-image teacher-1'>
-                        <img src="./img/portraits/1.jpg" alt="Teacher 1" />
+                        <img src="./img/portraits/gasparCasco.png" alt="Teacher 1" />
                         <div className='image-description'>
                             <div className='description'>
-                                <span>Profesor 1</span>
-                                <a href="#">@profe1</a>
+                                <span>Gaspar Agustín Casco</span>
+                                <a href="#" target='_blank'>@profe1</a>
                             </div>
                         </div>
                     </div>
 
                     <div className='teacher-image teacher-2'>
-                        <img src="./img/portraits/1.jpg" alt="Teacher 2" />
+                        <img src="./img/portraits/gasparCasco.png" alt="Teacher 2" />
                         <div className='image-description'>
                             <div className='description'>
                                 <span>Profesor 2</span>
-                                <a href="#">@profe2</a>
+                                <a href="#" target='_blank'>@profe2</a>
                             </div>
                         </div>
                     </div>
 
                     <div className='teacher-image teacher-3'>
-                        <img src="./img/portraits/1.jpg" alt="Teacher 3" />
+                        <img src="./img/portraits/raulQuintana.png" alt="Teacher 3" />
                         <div className='image-description'>
                             <div className='description'>
-                                <span>Profesor 3</span>
-                                <a href="#">@profe3</a>
+                                <span>Raúl Quintana</span>
+                                <a href="#" target='_blank'>@profe3</a>
                             </div>
                         </div>
                     </div>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Swal from 'sweetalert2';
 import './mail.css';
 import emailjs from '@emailjs/browser';
 
@@ -13,7 +14,6 @@ const Mail = () => {
   });
 
   const [errors, setErrors] = useState({});
-  const [success, setSuccess] = useState('');
 
   const validate = () => {
     const newErrors = {};
@@ -49,7 +49,16 @@ const Mail = () => {
       form,
       'kJt5zG7SwgWGRLxuk'      // public key
     ).then(() => {
-      setSuccess('Mensaje enviado con éxito.');
+      Swal.fire({
+        icon: 'success',
+        title: '¡Mensaje enviado!',
+        text: 'Nos pondremos en contacto contigo muy pronto.',
+        confirmButtonColor: '#ee440f',
+        customClass: {
+          popup: 'custom-swal'
+        }
+      });
+
       setForm({
         nombre: '',
         apellido: '',
@@ -59,11 +68,17 @@ const Mail = () => {
         mensaje: ''
       });
 
-      console.log('Formulario enviado:', form);
-
       setErrors({});
     }).catch(() => {
-      setSuccess('Error al enviar el mensaje. Intente de nuevo.');
+      Swal.fire({
+        icon: 'error',
+        title: 'Error al enviar',
+        text: 'Ocurrió un problema. Intenta de nuevo más tarde.',
+        confirmButtonColor: '#ff6b35',
+        customClass: {
+          popup: 'custom-swal'
+        }
+      });
     });
   };
 
@@ -74,34 +89,41 @@ const Mail = () => {
       <form onSubmit={handleSubmit} className='mail-form'>
         <div className='mail-inputs'>
           <div className='input-group-fields'>
-            <input name="nombre" value={form.nombre} onChange={handleChange} type="text" placeholder='Nombre' className='field name' />
-            {errors.nombre && <p>{errors.nombre}</p>}
+            <div className='input-wrapper'>
+              {errors.nombre && <p className="error-message">{errors.nombre}</p>}
+              <input name="nombre" value={form.nombre} onChange={handleChange} type="text" placeholder="Nombre" className={`name ${errors.nombre ? 'field-error' : 'field'}`} />
+            </div>
 
-            <input name="apellido" value={form.apellido} onChange={handleChange} type="text" placeholder='Apellido' className='field lastname' />
-            {errors.apellido && <p>{errors.apellido}</p>}
+            <div className='input-wrapper'>
+              {errors.apellido && <p className="error-message">{errors.apellido}</p>}
+              <input name="apellido" value={form.apellido} onChange={handleChange} type="text" placeholder="Apellido" className={`lastname ${errors.apellido ? 'field-error' : 'field'}`} />
+            </div>
           </div>
 
           <div className='input-group-fields'>
-            <input name="celular" value={form.celular} onChange={handleChange} type="tel" placeholder='Celular' className='field phone' />
-            {errors.celular && <p>{errors.celular}</p>}
-
-            <input name="email" value={form.email} onChange={handleChange} type="text" placeholder='E-Mail' className='field email' />
-            {errors.email && <p>{errors.email}</p>}
+            <div className='input-wrapper'>
+              {errors.celular && <p className="error-message">{errors.celular}</p>}
+              <input name="celular" value={form.celular} onChange={handleChange} type="tel" placeholder='Celular' className={`phone ${errors.nombre ? 'field-error' : 'field'}`} />
+            </div>
+            <div className='input-wrapper'>
+              {errors.email && <p className="error-message">{errors.email}</p>}
+              <input name="email" value={form.email} onChange={handleChange} type="text" placeholder='E-Mail' className={`email ${errors.nombre ? 'field-error' : 'field'}`} />
+            </div>
           </div>
 
           <div className='input-group-subject'>
-            <input name="tema" value={form.tema} onChange={handleChange} type="text" placeholder='Tema' className='field subject' />
-            {errors.tema && <p>{errors.tema}</p>}
+            {errors.tema && <p className="error-message">{errors.tema}</p>}
+            <input name="tema" value={form.tema} onChange={handleChange} type="text" placeholder='Tema' className={`subject ${errors.nombre ? 'field-error' : 'field'}`} />
+            
           </div>
 
           <div className='input-group-message'>
-            <textarea name="mensaje" value={form.mensaje} onChange={handleChange} placeholder='Mensaje' className='field message' />
-            {errors.mensaje && <p>{errors.mensaje}</p>}
+            {errors.mensaje && <p className="error-message">{errors.mensaje}</p>}
+            <textarea name="mensaje" value={form.mensaje} onChange={handleChange} placeholder='Mensaje' className={`message ${errors.nombre ? 'field-error' : 'field'}`} />
           </div>
         </div>
 
         <button type="submit" className='send-mail'>Enviar</button>
-        {success && <p>{success}</p>}
       </form>
     </section>
   );

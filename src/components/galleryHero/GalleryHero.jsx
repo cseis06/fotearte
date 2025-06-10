@@ -8,7 +8,7 @@ const HeroGallery = () => {
       <div className="gallery-hero-content">
         <div className='gallery-hero-titles'>
             <div className="gallery-hero-title">
-                <p>BIENVENIDO A <br /> LA GALAERÍA</p>
+                <p>Bienvenido a<br />La Galería</p>
             </div>
         </div>
       </div>

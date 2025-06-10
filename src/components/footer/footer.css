@@ -1,52 +1,84 @@
 footer {
-    bottom: 0;
-    margin-top: 20dvh;
-    background: var(--bg-s1);
-    color: var(--font-s1);
+  margin-top: 20dvh;
+  background: var(--bg-s1);
+  color: var(--font-s1);
+  font-size: clamp(0.9rem, 1vw, 1.1rem);
 }
+
 .footer-content {
-    padding: 10dvh 8%;
-    display: flex;
-    justify-content: space-between;
+  padding: clamp(4rem, 10vh, 10rem) 8%;
+  display: flex;
+  justify-content: space-between;
+  gap: clamp(2rem, 4vw, 4rem);
 }
+
 .footer-info {
-    padding: 0 8%;
-    display: flex;
-    justify-content: space-between;
-    gap: 5rem;
+  padding: 0 8%;
+  display: flex;
+  justify-content: space-between;
+  gap: clamp(2rem, 5vw, 5rem);
 }
-.footer-logo img { 
-    margin-top: -30px;
-    width: 350px;
+
+.footer-logo img {
+  width: clamp(180px, 25vw, 350px);
+  margin-top: -30px;
 }
+
 .footer-content-logo p {
-    padding: 3dvh 0 0 0;
-    max-width: 400px;
+  padding-top: 3dvh;
+  max-width: 400px;
+  font-size: clamp(0.8rem, 1vw, 1rem);
 }
-.footer-content-location h4 {
-    padding-bottom: 15px;
+
+.footer-content-location h4,
+.footer-content-menu h4,
+.footer-content-social h4 {
+  padding-bottom: 15px;
+  font-size: clamp(0.9rem, 1.2vw, 1.1rem);
 }
-.footer-content-location li {
-    padding-bottom: 5px;
-}
-.footer-content-menu h4 {
-    padding-bottom: 15px;
-}
+
+.footer-content-location li,
 .footer-content-menu li {
-    padding-bottom: 5px;
+  padding-bottom: 5px;
+  color: var(--font-s1);
+}
+
+.footer-content-location ul,
+.footer-content-menu ul {
+  font-size: clamp(0.8rem, 1.2vw, 1rem);
 }
 .footer-content-social ul {
-    padding: 20px 0 0 0;
-    display: flex;
-    gap: 2rem;
+  padding-top: 20px;
+  display: flex;
+  gap: clamp(1rem, 2vw, 2rem);
 }
+
 .footer-content-social img {
-    width: 30px;
+  width: clamp(25px, 2vw, 30px);
 }
+
 .copyright {
-    padding: 1dvh 8%;
-    background: var(--orange-gx);
-    color: var(--font-p1);
-    font-size: .7rem;
+  padding: 2vh 8%;
+  background: var(--orange-gx);
+  color: var(--font-p1);
+  font-size: clamp(0.6rem, 0.8vw, 0.9rem);
+  text-align: center;
+}
+
+@media (max-width: 1000px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+  }
+
+  .footer-info {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-content-logo p {
+    padding: 3dvh 8dvw;
+    max-width: 100%;
+  }
 }

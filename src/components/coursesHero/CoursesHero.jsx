@@ -8,7 +8,7 @@ const CoursesHero = () => {
       <div className="courses-hero-content">
         <div className='courses-hero-titles'>
             <div className="courses-hero-title">
-                <p>UNITE AL MUNDO DE LA FOTOGRAFIA</p>
+                <p>Uníte al Mundo<br />De la Fotografía</p>
             </div>
         </div>
       </div>
