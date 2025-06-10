@@ -3,7 +3,7 @@ import CoursesHero from '../coursesHero/coursesHero'
 
 const Courses = () => {
   return (
-    <CoursesHero />
+    <>rngweno</>
   ) 
 }
 
