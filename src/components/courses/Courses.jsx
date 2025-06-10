@@ -1,9 +1,10 @@
 import React from 'react'
+import CoursesHero from '../coursesHero/coursesHero'
 
 const Courses = () => {
   return (
-    <div>Courses</div>
-  )
+    <CoursesHero />
+  ) 
 }
 
 export default Courses
