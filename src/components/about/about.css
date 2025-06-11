@@ -188,7 +188,7 @@
     padding: 0 16%;
 }
 .join-bg {
-  background-image: url('./img/bg/join.png');
+  background-image: url('/img/bg/join.png');
   background-size: cover;
   background-position: center;
   width: 100dvw;
@@ -437,7 +437,7 @@
     padding: 0 8%;
 }
 .gallery-bg {
-  background-image: url('./img/bg/gallery.png');
+  background-image: url('/img/bg/gallery.png');
   background-size: cover;
   background-position: center;
   width: 100dvw;

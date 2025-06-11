@@ -6,7 +6,7 @@
 }
 
 .gallery-hero-bg {
-  background-image: url('./img/bg/galleryHero.png');
+  background-image: url('/img/bg/galleryHero.png');
   background-size: cover;
   background-position: center;
   width: 100%;

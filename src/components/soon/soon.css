@@ -5,7 +5,7 @@
   overflow: hidden;
 }
 .soon-bg {
-  background-image: url('./img/bg/soon.png');
+  background-image: url('/img/bg/soon.png');
   background-size: cover;
   background-position: center;
   width: 100%;
