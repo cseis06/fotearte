@@ -31,7 +31,7 @@ const About = () => {
                 </p>
 
                 <div className='about-buttons'>
-                    <a href="https://wa.link/4wie6h" target='_blank'>
+                    <a href="https://wa.link/0j1xkk" target='_blank'>
                         <button className='button-courses'>
                             Inicial
                         </button>
@@ -41,7 +41,7 @@ const About = () => {
                             Intermedio
                         </button>
                     </a>
-                    <a href="https://wa.link/tcpcql" target='_blank'>
+                    <a href="https://wa.link/2x5ieq" target='_blank'>
                         <button className='button-courses'>
                             Avanzado
                         </button>
