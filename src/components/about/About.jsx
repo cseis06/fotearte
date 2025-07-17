@@ -36,7 +36,7 @@ const About = () => {
                             Inicial
                         </button>
                     </a>
-                    <a href="https://wa.link/jsl598" target='_blank'>
+                    <a href="https://wa.link/vi0ifd" target='_blank'>
                         <button className='button-courses'>
                             Intermedio
                         </button>
