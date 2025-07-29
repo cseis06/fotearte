@@ -1,12 +1,55 @@
-# React + Vite
+# 📸 FOTEARTE — Descubrí la fotografía del mañana, hoy
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Fotearte** es una landing page full responsive para una escuela de fotografía en Paraguay. Hecha con ❤️ usando **React** + **Vite**, con un diseño moderno y atractivo que inspira desde el primer scroll.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tecnologías usadas
 
-## Expanding the ESLint configuration
+- ⚛️ React.js
+- ⚡ Vite
+- 💅 CSS moderno y responsive
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠 Instalación y ejecución
+
+```bash
+# 1. Cloná el repo
+git clone https://github.com/cseis06/fotearte.git
+
+# 2. Instalá las dependencias
+npm install
+
+# 3. Ejecutá el servidor de desarrollo
+npm run dev
+```
+
+⚠️ **Este proyecto es puramente frontend, no requiere backend.**
+
+---
+
+## 🌐 ¿Qué vas a encontrar?
+
+Secciones como:
+
+- 🏠 Inicio  
+- 📷 Cámaras  
+- 🖼️ Galería  
+- 🎓 Cursos  
+- 📬 Contacto
+
+---
+
+## 📌 Estado del proyecto
+
+🟢 **Productivo** – El sitio está listo en [fotearte.com](https://fotearte.com/).
+
+---
+
+## 👤 Créditos
+
+Desarrollado por [@cseis06](https://github.com/cseis06)  
+Copyright © Fotearte Paraguay
+
+---
