@@ -52,7 +52,7 @@ const Footer = () => {
                                 <img src="./img/icon/facebook.svg" alt="facebook" />
                             </li>
                         </a>
-                        <a href="https://wa.link/m71gsd">
+                        <a href="https://wa.link/cqoy8r">
                             <li>
                                 <img src="./img/icon/whatsapp.svg" alt="whatsapp" />
                             </li>

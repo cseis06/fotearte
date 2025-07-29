@@ -12,7 +12,7 @@ const Courses = () => {
 			<div className='course'>
 				<span>Nivel Inicial</span>
 				<div className='course-image-wrapper'>
-					<a href="https://wa.link/4wie6h" target='_blank'>
+					<a href="https://wa.link/0j1xkk" target='_blank'>
 						<img src="./img/courses/inicial.png" alt="inicial" />
 						<div className='overlay'>
 							<span className='overlay-text'>Preguntar</span>
@@ -23,7 +23,7 @@ const Courses = () => {
 			<div className='course'>
 				<span>Nivel Intermedio</span>
 				<div className='course-image-wrapper'>
-					<a href="https://wa.link/jsl598" target='_blank'>
+					<a href="https://wa.link/vi0ifd" target='_blank'>
 						<img src="./img/courses/intermedio.png" alt="inicial" />
 						<div className='overlay'>
 							<span className='overlay-text'>Preguntar</span>
@@ -34,7 +34,7 @@ const Courses = () => {
 			<div className='course'>
 				<span>Nivel Avanzado</span>
 				<div className='course-image-wrapper'>
-					<a href="https://wa.link/tcpcql" target='_blank'>
+					<a href="https://wa.link/2x5ieq" target='_blank'>
 						<img src="./img/courses/avanzado.png" alt="inicial" />
 						<div className='overlay'>
 							<span className='overlay-text'>Preguntar</span>
