@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html, body {
+  @apply bg-black text-neutral-200 scroll-smooth;
+}
+
+.nav-blur {
+  @apply backdrop-blur-md bg-black/50 border-b border-white/5;
+}
+
+.section {
+  @apply py-16 md:py-24;
+}
+
+.section-title {
+  @apply text-2xl md:text-3xl font-semibold text-white tracking-tight;
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #ff6b3d, #ff8a64);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.card {
+  @apply rounded-xl border border-white/10 bg-white/[0.03] shadow-lg shadow-black/30;
+}
+
+.btn {
+  @apply relative inline-flex items-center justify-center rounded-full px-6 py-3 font-semibold text-white select-none
+  bg-gradient-to-b from-brand to-brand-soft shadow-[0_10px_30px_rgba(255,107,61,0.35)] ring-1 ring-white/10
+  transition ease-out duration-200 hover:shadow-[0_14px_44px_rgba(255,138,100,0.45)] hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-brand/50;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center rounded-full px-6 py-3 font-semibold text-white
+  bg-white/5 hover:bg-white/10 ring-1 ring-white/10 transition ease-out duration-200;
+}
