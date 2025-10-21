@@ -20,15 +20,14 @@ export default function HistoryTimeline({ items = [] }) {
               <div className={`absolute inset-0 rounded-2xl pointer-events-none ${isActive ? 'opacity-100' : 'opacity-0'} transition-opacity duration-300 bg-[radial-gradient(300px_280px_at_30%_20%,rgba(255,107,61,0.22),transparent_65%),radial-gradient(200px_140px_at_80%_60%,rgba(255,138,100,0.18),transparent_60%)]`} />
               <div className="h-80 md:h-96 flex">
                 {/* Colapsado: año vertical */}
-                <div className="flex w-18 md:w-20 shrink-0 items-center justify-center">
-                  <span className={`text-neutral-300 ${isActive ? 'opacity-0' : 'opacity-100'} transition-opacity duration-200 origin-center -rotate-90 tracking-wider font-medium`}>
+                <div className="flex w-16 md:w-20 shrink-0 items-center justify-center">
+                  <span className={`text-neutral-300 opacity-100 transition-opacity duration-200 origin-center -rotate-90 tracking-wider font-medium`}>
                     {it.year}
                   </span>
                 </div>
                 {/* Expandido: contenido */}
                 <div className={`${isActive ? 'flex' : 'hidden'} flex-col p-5 pr-6 items-center justify-center text-center w-full`}>
-                  <h3 className="text-white font-semibold">{it.year}</h3>
-                  <p className="mt-2 text-sm text-neutral-300 leading-relaxed max-w-[34ch] text-justify">{it.text}</p>
+                  <p className="text-sm text-neutral-300 leading-relaxed max-w-[34ch] text-justify">{it.text}</p>
                 </div>
               </div>
               {/* Icono/base inferior */}

@@ -1,6 +1,7 @@
 import GSAPReveal from '@/components/GSAPReveal'
 import ParallaxImage from '@/components/ParallaxImage'
 import HistoryTimeline from '@/components/HistoryTimeline'
+import Testimonials from '@/components/Testimonials'
 
 const fundador = {
   nombre: 'Juan Pérez',
@@ -9,21 +10,21 @@ const fundador = {
 }
 
 const profesores = [
-  { nombre: 'Ana Gómez', especialidad: 'Retrato', foto: '/prof-ana.jpg' },
-  { nombre: 'Luis Martínez', especialidad: 'Paisaje', foto: '/prof-luis.jpg' },
-  { nombre: 'María López', especialidad: 'Street', foto: '/prof-maria.jpg' },
+  { nombre: 'Gaspar Casco', especialidad: 'Retrato', foto: '/gaspar-casco.png' },
+  { nombre: 'Luis Martínez', especialidad: 'Paisaje', foto: '/raul-quintana.png' },
+  { nombre: 'María López', especialidad: 'Street', foto: '/raul-quintana.png' },
 ]
 
 const tiposCursos = [
-  { nivel: 'Inicial', desc: 'Fundamentos de cámara, composición y luz natural.', img: '/curso-inicial.jpg' },
-  { nivel: 'Intermedio', desc: 'Iluminación, edición y proyectos guiados.', img: '/curso-intermedio.jpg' },
-  { nivel: 'Avanzado', desc: 'Proyectos autorales, dirección y portafolio.', img: '/curso-avanzado.jpg' },
+  { nivel: 'Inicial', desc: 'Fundamentos de cámara, composición y luz natural.', img: '/inicial.png' },
+  { nivel: 'Intermedio', desc: 'Iluminación, edición y proyectos guiados.', img: '/intermedio.png' },
+  { nivel: 'Avanzado', desc: 'Proyectos autorales, dirección y portafolio.', img: '/avanzado.png' },
 ]
 
 const testimonios = [
   { nombre: 'Rocío', texto: 'Aprendí más en 3 meses que en años por mi cuenta. La comunidad es increíble.' },
   { nombre: 'Carlos', texto: 'Profes super dedicados y contenido actualizado. Recomendadísimo.' },
-  { nombre: 'Valeria', texto: 'La escuela me ayudó a conseguir mis primeros clientes.' },
+  { nombre: 'Valeria', texto: 'La escuela me ayudó a conseguir mis primeros clientes. Gracias!' },
 ]
 
 export const metadata = {
@@ -146,16 +147,7 @@ export default function HomePage() {
       <section className="section">
         <div className="container">
           <GSAPReveal><h2 className="section-title">Testimonios</h2></GSAPReveal>
-          <div className="mt-8 grid md:grid-cols-3 gap-6">
-            {testimonios.map((t, i) => (
-              <GSAPReveal key={i} delay={i * 0.05}>
-                <blockquote className="card p-6">
-                  <p className="text-neutral-200">“{t.texto}”</p>
-                  <footer className="mt-3 text-sm text-neutral-400">— {t.nombre}</footer>
-                </blockquote>
-              </GSAPReveal>
-            ))}
-          </div>
+          <Testimonials items={testimonios} />
         </div>
       </section>
     </>

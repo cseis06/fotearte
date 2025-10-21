@@ -28,7 +28,7 @@ export default function ParallaxImage({ src, alt, height = 320, strength = 40, c
   return (
     <div ref={ref} className={`overflow-hidden rounded-xl ${className}`} style={{ height }}>
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src={src} alt={alt} className={`w-full h-full ${fitClass} object-center will-change-transform`} />
+      <img src={src} alt={alt} className={`w-full h-full ${fitClass} object-center will-change-transform rounded-xl`} />
     </div>
   )
 }
